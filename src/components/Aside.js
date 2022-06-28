@@ -4,8 +4,12 @@ import { NavLink } from 'react-router-dom';
 function Aside() {
   return (
     <>
-      <div className="sidebar">
-        <ul>
+      <label className="bars" for="toggle">
+        <i className="fas fa-bars"></i>
+      </label>
+      <input id="toggle" type="checkbox" />
+      <div className=" sidebar nav">
+        <ul className="nav">
           <li>
             <NavLink to="/" activeClassName="active" exact>
               <i class="fas fa-home-lg-alt"></i>
